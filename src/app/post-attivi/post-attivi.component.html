@@ -1,0 +1,3 @@
+<h1>Post attivi</h1>
+
+<app-post-card *ngFor="let p of posts" [post]="p" (editEvent)="disattivaPost($event)"></app-post-card>

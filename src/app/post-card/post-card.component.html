@@ -1,0 +1,7 @@
+<div>
+    <h4 appEvidenzia>{{post.title}}</h4>
+    <h5>{{post.body | anteprima}}</h5>
+
+    <button (click)="editPost()">{{post.active ? 'Disattiva' : 'Attiva'}}</button>
+    <button [routerLink]="['/dettagli', post.id]">Dettagli</button>
+</div>
